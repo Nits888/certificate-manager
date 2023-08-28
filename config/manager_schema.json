@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "certificates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "cert_file": { "type": "string" },
+          "source_location": { "type": "string" },
+          "target_location": { "type": "string" },
+          "target_filename": { "type": "string" },
+          "command": { "type": "string" },
+          "ssh_username": { "type": "string" },
+          "ssh_hostname": { "type": "string" },
+          "ssh_key_filename": { "type": "string" }
+        },
+        "required": ["cert_file"],
+        "anyOf": [
+          { "required": ["source_location", "target_location", "target_filename"] },
+          { "required": ["command", "ssh_username", "ssh_hostname", "ssh_key_filename"] }
+        ]
+      }
+    }
+  },
+  "required": ["certificates"]
+}

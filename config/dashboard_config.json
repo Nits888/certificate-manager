@@ -1,0 +1,34 @@
+{
+    "applications": {
+        "CRYSTAL": [
+            {
+                "server_type": "web",
+                "servers": [
+                    {
+                        "server_name": "google.co.in",
+                        "endpoint": "https://chat.openai.com/",
+                        "cert_type": "pem"
+                    },
+                    {
+                        "server_name": "www.facebook.com",
+                        "endpoint": "https://www.facebook.com/",
+                        "cert_type": "pem"
+                    }
+                ]
+            }
+        ],
+        "DTP": [
+            {
+                "server_type": "web",
+                "servers": [
+                    {
+                        "server_name": "aoa.org",
+                        "endpoint": "https://www.aoa.org/",
+                        "cert_type": "pem"
+                    }
+                ]
+            }
+        ]
+    }
+}
+

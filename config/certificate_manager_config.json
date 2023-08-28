@@ -1,0 +1,24 @@
+{
+  "certificates": [
+    {
+      "cert_file": "certificate.pem",
+      "source_location": "/path/to/source",
+      "target_location": "/path/to/target",
+      "target_filename": "target_certificate.pem",
+      "command": "echo 'Certificate copied and command executed'",
+      "ssh_username": "remote_user",
+      "ssh_hostname": "remote.example.com",
+      "ssh_key_filename": "/path/to/ssh/key"
+    },
+    {
+      "cert_file": "another_certificate.pem",
+      "source_location": "/path/to/another/source",
+      "target_location": "/path/to/another/target",
+      "target_filename": "another_target_certificate.pem",
+      "command": "echo 'Another certificate copied and command executed'",
+      "ssh_username": "local_user",
+      "ssh_hostname": "local_machine",
+      "ssh_key_filename": "/path/to/ssh/key"
+    }
+  ]
+}
